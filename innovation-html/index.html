@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovation Class</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+      
+</head>
+<body>
+    
+    <header>
+        <p>Ganhe <span class="span1">R$10,00</span> de desconto no seu primeiro pedido. Utilize o cupom
+            <span>DESCONTO10</span>
+        </p>
+        <div class="container">
+            
+            <nav class="navbar">
+                <div class="categorias-mobile">
+                    <button class="exibir-menu"><i class="fa-solid fa-bars"></i></button>
+                    <div class="menu-mobile">
+                        <ul>
+                            <li><a href="#carrossel1">Lançamentos</a></li>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#localizacao">Localização</a></li>
+                            <li><a href="#formulario">Formulario</a></li>
+                        </ul>
+                    </div>
+                    <img src="./img/logo.png" alt="avantiLogo" class="logo">
+    
+                    <div class="carrinho">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+                <div class="lado-esquerdo">
+                    <img src="./img/logo.png" alt="avantiLogo" class="logo">
+                    <div class="search">
+                        <input type="text" placeholder="Digite aqui o que você procura" id="input">
+                        <button onclick="buscarTopico()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+    
+                <div class="lado-direito">
+    
+                    <div class="perfil">
+                        <i class="fa-solid fa-user"></i>
+                        <p>Olá, Nome cliente!</p>
+                    </div>
+                    <div class="carrinho">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+            </nav>
+    
+    
+            <nav class="menu">
+    
+                <div class="search-mobile">
+                    <input type="text" placeholder="Digite aqui o que você procura" id="input-mobile">
+                    <button onclick="buscarTopico()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="resultado-mobile" id="suggestions">
+                    
+                </div>
+                <div class="categorias">
+                    <button class="btn-categorias">
+                        <i class="fa-solid fa-bars"></i>
+                        <p>Todas as Categorias</p>
+                    </button>
+                </div>
+    
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Departamento</a></li>
+                    <li><a href="#home">Departamento</a></li>
+                    <li><a href="#home">Departamento</a></li>
+                    <li><a href="#home">Departamento</a></li>
+                    <li><a href="#home">Departamento</a></li>
+                    <li><a href="#home">Departamento</a></li>
+                    <li><a href="#home">Departamento</a></li>
+                    <li><a href="#home">Departamento</a></li>
+    
+                </ul>
+            </nav>
+            <div class="categorias-hover">
+                <div class="menu-coluna">
+                    <ul>
+                        <li class="primary">Departamento <img src="./img/arrow-25.png" alt=""></li>
+                        <li>Departamento<img src="./img/arrow-25.png" alt=""></li>
+                        <li>Departamento<img src="./img/arrow-25.png" alt=""></li>
+                        <li>Departamento<img src="./img/arrow-25.png" alt=""></li>
+                        <li>Departamento<img src="./img/arrow-25.png" alt=""></li>
+                        <li>Departamento<img src="./img/arrow-25.png" alt=""></li>
+                    </ul>
+                </div>
+    
+                <div class="subcategorias">
+                    <div class="coluna">
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                    </div>
+                    <div class="coluna">
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                    </div>
+                    <div class="coluna">
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                    </div>
+                </div>
+    
+                <div class="banner-categorias">
+                    <div class="img-banner">
+                        <img src="./img/coffe-loc.png" alt="Banner">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="texto-banner">
+                        <p>Confira os Produtos<br><span>Que acabaram<br>De chegar</span></p>
+                        <button>VER TODOS</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="hover-departamento">
+                <div class="subcategorias-departamento">
+                    <div class="title-departamento">
+                        <h4>Departamento</h4>
+                    </div>
+                    <div class="coluna">
+                        <p class="categoria-title">Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                    </div>
+                    <div class="coluna">
+                        <p class="categoria-title">Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                    </div>
+                    <div class="coluna">
+                        <p class="categoria-title">Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                        <p>Categoria</p>
+                    </div>
+                </div>
+                <div class="banner-categorias">
+                    <div class="img-banner">
+                        <img src="./img/coffe-loc.png" alt="Banner">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="texto-banner">
+                        <p>Confira os Produtos<br><span>Que acabaram<br>De chegar</span></p>
+                        <button>VER TODOS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container" >
+            <div class="hero-content">
+                <div class="image-hero">
+                    <img src="./img/heroImg.png" alt="">
+                </div>
+                <div class="hero-text">
+                    <h1>SUPER<span>SALE</span></h1>
+                    <p class="subtext">Itens selecionados com até</p>
+                    <p class="desconto">50%off</p>
+                </div>
+                <div class="hero-text-mobile">
+                    <h1>SUPER<br><span>SALE</span></h1>
+                    <p class="subtext">SELECTED ITEMS UP TO</p>
+                    <p class="desconto">50%off</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="carrossel1" class="lancamentos" >
+        <div class="container" id="lancamentoContainer">
+            <div class="infos-lancamentos">
+                <p class="lancamento">Lançamentos</p>
+                <p class="saber-mais">Ver mais</p>
+            </div>
+            
+            <div class="carrossel-wrapper" id="lançamentos">
+                <div class="produtos-container">
+            
+                    <div class="produtos-track">
+            
+                        <div class="box-produtos">
+                            <div class="card-new">
+                                <p>NOVO</p>
+                            </div>
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="box-produtos">
+                            <div class="card-new">
+                                <p>NOVO</p>
+                            </div>
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="box-produtos">
+                            <div class="card-new">
+                                <p>NOVO</p>
+                            </div>
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="box-produtos">
+                            <div class="card-new">
+                                <p>NOVO</p>
+                            </div>
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="box-produtos">
+                            <div class="card-new">
+                                <p>NOVO</p>
+                            </div>
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="box-produtos">
+                            <div class="card-new">
+                                <p>NOVO</p>
+                            </div>
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="box-produtos">
+                            <div class="card-new">
+                                <p>NOVO</p>
+                            </div>
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="box-produtos">
+                            <div class="card-new">
+                                <p>NOVO</p>
+                            </div>
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="box-produtos">
+                            <div class="card-new">
+                                <p>NOVO</p>
+                            </div>
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="box-produtos">
+                            <div class="card-new">
+                                <p>NOVO</p>
+                            </div>
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="box-produtos">
+                            <div class="card-new">
+                                <p>NOVO</p>
+                            </div>
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="box-produtos">
+                            <div class="card-new">
+                                <p>NOVO</p>
+                            </div>
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="box-produtos">
+                            <div class="card-new">
+                                <p>NOVO</p>
+                            </div>
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                    </div>
+            
+            
+                </div>
+
+                <button id="prevBtn" class="carousel-btn left"><i class="fa-solid fa-arrow-left"></i></button>
+                <button id="nextBtn" class="carousel-btn right"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            
+
+            <div class="dots">
+                <button onClick="setActiveDot(0)"><span class="dot active"></span></button>
+                <button onClick="setActiveDot(1)"><span class="dot"></span></button>
+                <button onClick="setActiveDot(2)"><span class="dot"></span></button>
+              </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="coffe">
+        <div class="container" id="coffe-about">
+            <div class="container-coffe">
+
+                <div class="image-coffe">
+                    <img src="./img/cafe.png" alt="">
+                </div>
+                <div class="coffe-text">
+                    <h2>LOREM IPSUM</h2>
+                    <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.  </p>
+                    
+                    <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="localizacao"  class="coffe-loc">
+        <div class="container" id="coffe-localizacao">
+            <div class="container-coffe-loc">
+                <div class="localizacao">
+                    <div class="loc 1">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                    </div>
+                    <div class="loc 2">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                    </div>
+                    <div class="loc 3">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                    </div>
+                </div>
+                <div class="loc-image">
+                    <img src="./img/coffe-loc.png" alt="">
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="coffe">
+        <div class="container">
+            <div class="container-coffe">
+
+                <div class="image-coffe">
+                    <img src="./img/cafe.png" alt="">
+                </div>
+                <div class="coffe-text">
+                    <h2>LOREM IPSUM</h2>
+                    <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.  </p>
+                    
+                    <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="carrossel2" class="lancamentos">
+        <div class="container">
+            <div class="infos-lancamentos">
+                <p class="lancamento">Lançamentos</p>
+                <p class="saber-mais">Ver mais</p>
+            </div>
+            
+            <div class="carrossel-wrapper">
+                <div class="produtos-container">
+            
+                    <div class="produtos-track">
+            
+                        <div class="box-produtos">
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="box-produtos">
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="box-produtos">
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="box-produtos">
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="box-produtos">
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="box-produtos">
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="box-produtos">
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="box-produtos">
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="box-produtos">
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="box-produtos">
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="box-produtos">
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="box-produtos">
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                        <div class="box-produtos">
+                            <img src="./img/produto.png" alt="Produto">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="preco">
+                                <div class="valor">
+                                    <span>R$ 100,00</span>
+                                    <p>R$ 79,90</p>
+                                </div>
+                                <div class="cupon">
+                                    <p>10% off</p>
+                                </div>
+                            </div>
+                            <p>Ou em até <span>10x de R$ 7,90</span></p>
+                            <button>Comprar</button>
+                        </div>
+                    </div>
+            
+            
+                </div>
+                <button id="prevBtn" class="carousel-btn left"><i class="fa-solid fa-arrow-left"></i></button>
+                <button id="nextBtn" class="carousel-btn right"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            
+
+            <div class="dots">
+                <button onClick="setActiveDot(0)"><span class="dot active"></span></button>
+                <button onClick="setActiveDot(1)"><span class="dot"></span></button>
+                <button onClick="setActiveDot(2)"><span class="dot"></span></button>
+              </div>
+        </div>
+    </section>
+        
+        
+    <section  class="avanti-contact">
+        <div class="container" id="container-contato">
+            <div class="container-contact">
+                <div class="contact-image">
+                    <h3>Entre em contato conosco e verifique a disponibilidade para sua região!</h3>
+                </div>
+                <div class="contact-infos" id="formulario"> 
+                    <h3>Cadastre-se na nossa <span>newsletter</span></h3>  
+                    <div class="forms">
+                        <div class="inputs">
+                            <input type="text" placeholder="Digite seu nome">
+                            <input type="text" placeholder="Digite seu e-mail">
+                        </div>
+                        <div class="submits">
+                            <input type="checkbox"><p>Estou de acordo com a <span>Política de Privacidade</span></p>
+                        </div>
+                        <button class="btn">Cadastrar</button>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      
+    <footer id="contact">
+        <div class="container" id="formulario-container">
+            <div class="footer-content">
+                
+                
+                    <div class="footer-column">
+                        <div class="redes">
+                            <img src="./img/logo.png" alt="">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    <div class="footer-column">
+                        <div class="footer-column-institucional">
+                            <div class="top-title">
+                                <h4>Institucional</h4>
+                                <button onclick="exibir('link')" id="button-exibir"><img src="./img/arrow-25.png" alt="arrow"></button>
+                            </div>
+                            <ul class="footer-links" id="list-link">
+                                <li><a href="#home">Sobre Nós</a></li>
+                                <li><a href="#features">Nossas Lojas</a></li>
+                                <li><a href="#courses">Privacidade e Segurança</a></li>
+                                <li><a href="#testimonials">Termos e Condições</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="footer-column">
+                        <div class="footer-column-ajuda">
+                            <div class="top-title">
+                                <h4>Central de ajuda</h4>
+                                <button onclick="exibir('help')" id="button-exibir"><img src="./img/arrow-25.png" alt="arrow"></button>
+                            </div>
+                            <ul class="footer-links" id="list-help">
+                                <li><a href="#">Fale Conosco</a></li>
+                                <li><a href="#">Frete e Entrega</a></li>
+                                <li><a href="#">Trocas e Devoluções</a></li>
+                                <li><a href="#">Formas de pagamento</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="footer-column">
+                        <div class="footer-column-atendimento">
+                            <div class="top-title">
+                                <h4>Atendimento</h4>
+                                <button onclick="exibir('call')" id="button-exibir"><img src="./img/arrow-25.png" alt="arrow"></button>
+                            </div>
+                            <ul class="footer-links" id="list-call">
+                                <li><span>Telefone:</span> (00) 1234-5678</li>
+                                <li><span> E-mail:</span> exemplo@exemplo.com.br</li>
+                                <li><span> Horário de atendimento:<br></span>
+                                    Segunda a Sábado: 07h00 às 23h00
+                                    Domingos e Feriados: 07h00 às 21h00</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                
+                
+            </div>
+            
+            <div class="footer-banks">
+                <img src="./img/cards.png" alt="">
+            </div>
+            <div class="footer-banks-mobile">
+                <img src="./img/cards-mobile.png" alt="">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="text-bottom">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            </div>
+            <div class="text-bottom-mobile">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat..</p>
+            </div>
+            <img src="./img/empresas.png" alt="">
+        </div>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/6c68e78083.js" crossorigin="anonymous"></script>
+</html>
